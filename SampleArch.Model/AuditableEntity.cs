@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SampleArch.Model
 {
-    public abstract class AuditableEntity<T> : Entity<T>
+    public abstract class AuditableEntity<T> : Entity<T>, IAuditableEntity
     {
         [ScaffoldColumn(false)]
         public DateTime CreatedDate { get; set; }

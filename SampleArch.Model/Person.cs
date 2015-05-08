@@ -27,7 +27,7 @@ namespace SampleArch.Model
         [MaxLength(50)]
         public string State { get; set; }
 
-        [Display(Name="Country")]
+        [Display(Name = "Country")]
         public int CountryId { get; set; }
 
         [ForeignKey("CountryId")]

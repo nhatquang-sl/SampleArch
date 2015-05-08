@@ -48,12 +48,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CountryService.cs" />
+    <Compile Include="EntityService.cs" />
+    <Compile Include="ICountryService.cs" />
+    <Compile Include="IEntityService.cs" />
+    <Compile Include="IPersonService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="PersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleArch.Model\SampleArch.Model.csproj">
+      <Project>{0dcddd93-ced7-46e3-bba7-5d4e1c93f4d1}</Project>
+      <Name>SampleArch.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleArch.Repository\SampleArch.Repository.csproj">
+      <Project>{71cc4fb6-ca3d-46e9-b6f5-4d8e098a4c6f}</Project>
+      <Name>SampleArch.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
